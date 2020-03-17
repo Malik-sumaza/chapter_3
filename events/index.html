@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../events/JS/main.css" />
+  </head>
+  <body>
+    <script src="../events/JS/main.js"></script>
+    <input class="inp" type="text" />
+    <h1></h1>
+    <!-- <button onclick="a()('Kubick')">onClicccccK!!!!</button> -->
+    <!-- <div style="background-color:burlywood">
+      <p class="p1" style="background-color: rebeccapurple;">
+        <button class="btn1">btn1</button>
+      </p>
+      <p class="p2" style="background-color: rgb(39, 207, 47);">
+        <button class="btn2">btn2</button>
+      </p> -->
+    <!-- </div> -->
+    <script>
+      // let btn1 = document.querySelector(".btn1");
+      // let p1 = document.querySelector(".p1");
+      // let div = document.querySelector("div");
+      // btn1.addEventListener("click", function(event) {
+      //   // console.log(even.target);
+      //   alert("btn click");
+      // });
+      // p1.addEventListener("click", function(event) {
+      //   if (this !== event.target) return;
+      //   // console.log(even.target);
+      //   alert("p click");
+      // });
+      // div.addEventListener("click", function(event) {
+      //   if (this !== event.target) return;
+      //   // console.log(even.target);
+      //   alert("div click");
+      // });
+      // this == event.currentTarget
+      // window.addEventListener("mousemove", function(e) {
+      //   console.log("X: " + e.clientX, "Y: " + e.clientY);
+      // });
+      // div.addEventListener("mousemove", function(e) {
+      //   e.stopPropagation();
+      // });
+
+      // btn1.addEventListener("click", function() {
+      //   alert("CLICK");
+      // });
+      // let ev = new Event("click");
+      // btn1.dispatchEvent(ev);
+      // console.log(ev);
+
+      let h1 = document.querySelector("h1");
+      let inp = document.querySelector(".inp");
+      window.addEventListener("change", function(e) {
+        h1.innerText = e.target.value;
+      });
+      // window.addEventListener("keydown", function(e) {
+      //   h1.innerText += e.key;
+      // });
+    </script>
+  </body>
+</html>
