@@ -25,9 +25,8 @@ function render() {
       <button onclick="updateCard(${i})">Update</button>
       <button onclick="deletedItem(${i})">Delete</button>
       <button onclick="redactor(${i})">Line</button>
-      
     </li>
-  `);
+   `);
   });
 }
 function deletedItem(index) {
